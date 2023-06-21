@@ -19,7 +19,7 @@ my-stories/
 │   └── romance_stories/
 │       ├── kafka_thetrial_butinAlabama.txt
 │       └── breakfast_at_lowe's.txt
-└── **markdownify.ps1**
+└── markdownify.ps1
 ```
 
 Launch Windows PowerShell as an administrator and set the execution policy to allow for local unsigned scripts to be run. If you don't know how to do that, see the section on "How to Configure PowerShell" below.
@@ -43,7 +43,7 @@ my-stories/
 │   ├── md_original_vampire_story_donotsteal.txt
 │   ├── md_kafka_thetrial_butinAlabama.txt
 │   └── md_breakfast_at_lowe's.txt
-└── **markdownify.ps1**
+└── markdownify.ps1
 ```
 
 All files in the 'md_stories' directory (i.e., the files beginning with the 'md_' prefix) are files which have successfully been converted from BBCode to Markdown. You're done! Open one up to check that the script executed successfully.
