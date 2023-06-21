@@ -16,7 +16,7 @@ my-stories/
 │   ├── harrypotter_fanfic.txt
 │   └── original_vampire_story_donotsteal.txt
 ├── 2023/
-│   └── romance_stories/
+│   └── romance-stories/
 │       ├── kafka_thetrial_butinAlabama.txt
 │       └── breakfast_at_lowe's.txt
 └── markdownify.ps1
@@ -35,7 +35,7 @@ my-stories/
 │   ├── harrypotter_fanfic.txt
 │   └── original_vampire_story_donotsteal.txt
 ├── 2023/
-│   └── romance_stories/
+│   └── romance-stories/
 │       ├── kafka_thetrial_butinAlabama.txt
 │       └── breakfast_at_lowe's.txt
 ├── md_stories/
