@@ -51,21 +51,24 @@ All files in the 'md_stories' directory (i.e., the files beginning with the 'md_
 ## Functionality/Limitations
 
 Markdownify will convert the following BBCode tags to the corresponding Markdown syntax:
-* Headers: [h1], [h2], [h3], [h4], [h5], [h6], [/h1], [/h2], [/h3], [/h4], [/h5], [/h6]
-* Italics: [i], [/i]
-* Bold: [b], [/b]
+
+| Function    | BBCode      | Markdown    |
+| ----------- | ----------- | ----------- |
+| Italicise   | [i], [/i]   | *, *        |
+| Bold        | [b], [/b]   | **, **      |
+| Headers     | [h1], [h2], [h3], [h4], [h5], [h6], [/h1], [/h2], [/h3], [/h4], [/h5], [/h6]   | #, ##, ###, ####, #####, ###### |
 
 Because Markdown does not have native tags to underline or align text, Markdownify will replace the following tags with corresponding HTML tags, as most Markdown interpreters also interpret HTML:
-| BBCode      | Markdown    |
-| ----------- | ----------- |
-| [u], [/u]   | `<u>`, `</u>`|
-| [center], [/center]   | `<div class="align-center">`, `</div>`|
-| [left], [/left]   | `<div class="align-left">`, `</div>`|
-| [right], [/right]   | `<div class="align-right">`, `</div>`|
+| Function    | BBCode      | HTML        |
+| ----------- | ----------- | ----------- |
+| Underline   | [u], [/u]   | `<u>`, `</u>` |
+| Center alignment | [center], [/center]   | `<div class="align-center">`, `</div>` |
+| Left alignment | [left], [/left]   | `<div class="align-left">`, `</div>` |
+| Right alignment | [right], [/right]   | `<div class="align-right">`, `</div>` |
 
-In a future update, I will make this behaviour toggle-able, with an optional argument to specify how Markdownify shall treat underline and alignment tags. Options will include 'convert to HTML' (the default behaviour), 'ignore', and 'remove'.
+In a future update, I will make this behaviour toggle-able, with an optional argument for the user to specify how Markdownify shall treat underline and alignment tags. Options will include converting these tags to HTML (the default behaviour), ignoring these tags, and removing these tags.
 
-Finally, Markdownify will add an escape character before any preexisting asterisks, to prevent them from displaying in unintended ways.
+Finally, Markdownify will add an escape character before any preexisting asterisks, to prevent them from displaying in unintended ways when displayed by a Markdown interpreter.
 
 At present, Markdownify does not handle any other BBCode tags, e.g., [url=], as these sorts of tags are rarely relevant for fiction stories. If the demand is there, however, I can build this functionality into the Markdownify script.
 
