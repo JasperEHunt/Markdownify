@@ -25,7 +25,7 @@ my-stories/
 Launch Windows PowerShell as an administrator and set the execution policy to allow for local unsigned scripts to be run. If you don't know how to do that, see the section on "How to Configure PowerShell" below.
 
 In PowerShell, navigate to the folder containing Markdownify, then run it with the following command:
-    .\markdownify.ps1
+`.\markdownify.ps1`.
 
 Once Markdownify has finished running, the resulting directory structure will look like this:
 
