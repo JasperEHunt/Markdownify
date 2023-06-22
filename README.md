@@ -1,4 +1,4 @@
-# Markdownify
+# Markdownify v0.5
 
 Markdownify is a tool for authors to convert .txt files from BBCode syntax to Markdown syntax. The Markdownify script is written for Windows PowerShell and thus will not work easily on UNIX systems.
 
@@ -66,11 +66,7 @@ Because Markdown does not have native tags to underline or align text, Markdowni
 | Left alignment | [left], [/left]   | `<div class="align-left">`, `</div>` |
 | Right alignment | [right], [/right]   | `<div class="align-right">`, `</div>` |
 
-In a future update, I will make this behaviour toggle-able, with an optional argument for the user to specify how Markdownify shall treat underline and alignment tags. Options will include converting these tags to HTML (the default behaviour), ignoring these tags, and removing these tags.
-
 Finally, Markdownify will add an escape character before any preexisting asterisks, to prevent them from displaying in unintended ways when displayed by a Markdown interpreter.
-
-At present, Markdownify does not handle any other BBCode tags, e.g., [url=], as these sorts of tags are rarely relevant for fiction stories. If the demand is there, however, I can build this functionality into the Markdownify script.
 
 ## How to Configure PowerShell
 
@@ -82,6 +78,14 @@ Once you have PowerShell running as an administrator, enter the following comman
 `Set-ExecutionPolicy RemoteSigned -Scope Process`.
 
 This sets PowerShell's execution policy to allow unsigned local scripts and signed remote scripts to run. Now, you can run Markdownify. Be sure to close the PowerShell window once you are done, which will restore the default execution policies for the next time you open a PowerShell window.
+
+## Plans for future updates
+
+In a future update, I will make HTML replacement toggle-able, with an optional argument for the user to specify how Markdownify shall treat underline and alignment tags. Options will include converting these tags to HTML (Markdownify's current behaviour -- this will be the default), ignoring these tags, and removing these tags.
+
+At present, Markdownify does not handle any other BBCode tags, e.g., [url=], as these sorts of tags are rarely relevant for fiction stories. If the demand is there, however, I can build this functionality into the Markdownify script.
+
+Finally, I would like to learn how to sign scripts so that Markdownify does not require adjusting PowerShell's execution policy. This will improve the security of my code and avoid putting users at risk to any malware which might exploit this change in PowerShell execution policy.
 
 ## License
 
