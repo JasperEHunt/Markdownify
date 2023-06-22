@@ -79,7 +79,7 @@ By default, PowerShell will only allow users to run signed PowerShell scripts. T
 To configure PowerShell to run unsigned local scripts, first launch PowerShell as an administrator. (You can go to the start menu, search for "Windows PowerShell", right-click, and select 'Run as administrator'.)
 
 Once you have PowerShell running as an administrator, enter the following command:
-    Set-ExecutionPolicy RemoteSigned -Scope Process
+`Set-ExecutionPolicy RemoteSigned -Scope Process`.
 
 This sets PowerShell's execution policy to allow unsigned local scripts and signed remote scripts to run. Now, you can run Markdownify. Be sure to close the PowerShell window once you are done, which will restore the default execution policies for the next time you open a PowerShell window.
 
