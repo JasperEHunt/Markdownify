@@ -1,3 +1,6 @@
+# Markdownify v0.5, written by Jasper E. Hunt
+# Markdownify works in two steps: (i) Builds a new directory called 'md_stories', (ii) Finds each .txt file in the current directory and subdirectories, replaces BBCode syntax with Markdown syntax, and saves the modified files with the prefix 'md_' in the 'md_stories' directory.
+
 New-Item -Path . -Name md_stories -ItemType "directory"
 
 $stories = Get-ChildItem . *.txt -rec
