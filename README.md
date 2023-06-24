@@ -70,7 +70,7 @@ Finally, Markdownify will add an escape character before any preexisting asteris
 
 ## How to Configure PowerShell
 
-By default, PowerShell will only allow users to run signed PowerShell scripts. This is a security feature that should not be taken lightly! However, the Markdownify script is unsigned and so we will need to (temporarily) tell PowerShell that it is okay to run local, unsigned scripts. Before you do any of the following, be doubly -- even triply -- sure that you downloaded your copy of Markdownify from a trusted source.
+By default, PowerShell will only allow users to run signed PowerShell scripts. This is a security feature which should not be taken lightly! However, the Markdownify script is unsigned, and so we will need to (temporarily) tell PowerShell that it is okay to run local, unsigned scripts. Before you do any of the following, be doubly -- even triply -- sure that you downloaded your copy of Markdownify from a trusted source.
 
 To configure PowerShell to run unsigned local scripts, first launch PowerShell as an administrator. (You can go to the start menu, search for "Windows PowerShell", right-click, and select 'Run as administrator'.)
 
@@ -84,8 +84,6 @@ This sets PowerShell's execution policy to allow unsigned local scripts and sign
 In a future update, I will make HTML replacement toggle-able, with an optional argument for the user to specify how Markdownify shall treat underline and alignment tags. Options will include converting these tags to HTML (Markdownify's current behaviour -- this will be the default), ignoring these tags, and removing these tags.
 
 At present, Markdownify does not handle any other BBCode tags, e.g., [url=], as these sorts of tags are rarely relevant for fiction stories. If the demand is there, however, I can build this functionality into the Markdownify script.
-
-Finally, I would like to learn how to sign scripts so that Markdownify does not require adjusting PowerShell's execution policy. This will improve the security of my code and avoid putting users at risk to any malware which might exploit this change in PowerShell execution policy.
 
 ## License
 
